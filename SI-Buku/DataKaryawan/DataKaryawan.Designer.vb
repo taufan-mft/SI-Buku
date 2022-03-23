@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class DataKaryawan
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,9 +20,11 @@ Partial Class DataKaryawan
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.txtumur = New System.Windows.Forms.TextBox()
+        Me.Label11 = New System.Windows.Forms.Label()
         Me.cmbStatus = New System.Windows.Forms.ComboBox()
         Me.cmbAgama = New System.Windows.Forms.ComboBox()
         Me.cmbJenisKelamin = New System.Windows.Forms.ComboBox()
@@ -49,6 +51,9 @@ Partial Class DataKaryawan
         Me.Button3 = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.lblNama = New System.Windows.Forms.Label()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.txtcari = New System.Windows.Forms.TextBox()
+        Me.Button5 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -56,6 +61,8 @@ Partial Class DataKaryawan
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.txtumur)
+        Me.GroupBox1.Controls.Add(Me.Label11)
         Me.GroupBox1.Controls.Add(Me.cmbStatus)
         Me.GroupBox1.Controls.Add(Me.cmbAgama)
         Me.GroupBox1.Controls.Add(Me.cmbJenisKelamin)
@@ -76,10 +83,26 @@ Partial Class DataKaryawan
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Location = New System.Drawing.Point(31, 38)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(335, 360)
+        Me.GroupBox1.Size = New System.Drawing.Size(335, 396)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Data Karyawan"
+        '
+        'txtumur
+        '
+        Me.txtumur.Location = New System.Drawing.Point(155, 352)
+        Me.txtumur.Name = "txtumur"
+        Me.txtumur.Size = New System.Drawing.Size(174, 20)
+        Me.txtumur.TabIndex = 19
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Location = New System.Drawing.Point(6, 355)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(51, 13)
+        Me.Label11.TabIndex = 18
+        Me.Label11.Text = "Semester"
         '
         'cmbStatus
         '
@@ -286,7 +309,7 @@ Partial Class DataKaryawan
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(31, 426)
+        Me.DataGridView1.Location = New System.Drawing.Point(31, 466)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(734, 150)
         Me.DataGridView1.TabIndex = 22
@@ -300,11 +323,39 @@ Partial Class DataKaryawan
         Me.lblNama.TabIndex = 23
         Me.lblNama.Text = "Selamat datang"
         '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(398, 67)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(75, 23)
+        Me.Button4.TabIndex = 24
+        Me.Button4.Text = "Cari Data"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'txtcari
+        '
+        Me.txtcari.Location = New System.Drawing.Point(493, 440)
+        Me.txtcari.Name = "txtcari"
+        Me.txtcari.Size = New System.Drawing.Size(100, 20)
+        Me.txtcari.TabIndex = 25
+        '
+        'Button5
+        '
+        Me.Button5.Location = New System.Drawing.Point(599, 437)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(75, 23)
+        Me.Button5.TabIndex = 26
+        Me.Button5.Text = "Cari"
+        Me.Button5.UseVisualStyleBackColor = True
+        '
         'DataKaryawan
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 593)
+        Me.ClientSize = New System.Drawing.Size(800, 628)
+        Me.Controls.Add(Me.Button5)
+        Me.Controls.Add(Me.txtcari)
+        Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.lblNama)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Button3)
@@ -352,4 +403,9 @@ Partial Class DataKaryawan
     Friend WithEvents Button3 As Button
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents lblNama As Label
+    Friend WithEvents Button4 As Button
+    Friend WithEvents txtcari As TextBox
+    Friend WithEvents Button5 As Button
+    Friend WithEvents txtumur As TextBox
+    Friend WithEvents Label11 As Label
 End Class

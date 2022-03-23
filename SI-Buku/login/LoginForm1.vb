@@ -11,7 +11,7 @@ Public Class LoginForm1
         If DM.HasRows = True Then
             DM.Read()
             DataKaryawan.lblNama.Text = $"Selamat datang {UsernameTextBox.Text}"
-            DataKaryawan.Show()
+            MenuUtama.Show()
             Me.Hide()
         Else
             MsgBox(" Maaf Username atau Password Anda Salah ")
